@@ -538,7 +538,7 @@ int rtsp_cloud_talk(char *cRtspUrl)
 	}
 }
 
-
+#if 0
 int main()
 {
 	int iRet = -1;
@@ -552,3 +552,4 @@ int main()
 	
 	return 0;
 }
+#endif
