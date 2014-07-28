@@ -119,6 +119,8 @@ int init_rtsp_param(ty_rtsp_param *pstRtspParam,char *cRtspUrl,ty_cloud_talk *ps
 	return 0;
 }
 
+
+
 int init_rtsp_descibe(ty_rtsp_param *pstRtspParam)
 {
 	int iRet;
@@ -536,7 +538,7 @@ int rtsp_cloud_talk(char *cRtspUrl)
 	}
 }
 
-#if 1
+
 int main()
 {
 	int iRet = -1;
@@ -550,4 +552,3 @@ int main()
 	
 	return 0;
 }
-#endif
