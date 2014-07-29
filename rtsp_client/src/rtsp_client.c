@@ -15,9 +15,9 @@
 
 #define ECSINO_PRODUCT_NAME         "ECSINO_IPC"    //产品标识
 #define IPC_VER                     "ECSINOV1.0"    //产品版本号
-#define RTSP_VER		"RTSP/1.0"
-#define DEFAULT_HOST 		"59.55.33.138"
-#define DEFAULT_RTSP_PORT	554
+#define RTSP_VER					"RTSP/1.0"
+#define DEFAULT_HOST 				"59.55.33.138"
+#define DEFAULT_RTSP_PORT			554
 //rtsp://59.55.33.138:554/899200088_0_1406079220135.wav
 
 

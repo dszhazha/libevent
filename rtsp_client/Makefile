@@ -8,10 +8,10 @@
 
 # target source
 
-TOOL_CHAIN_DIR=../../gcc/arm-hisiv100-linux/target/bin/
+#TOOL_CHAIN_DIR=../../gcc/arm-hisiv100-linux/target/bin/
 
-export CROSS_COMPILE?= ${TOOL_CHAIN_DIR}/arm-hisiv100nptl-linux-
-export CROSS?= ${TOOL_CHAIN_DIR}/arm-hisiv100nptl-linux-
+#export CROSS_COMPILE?= ${TOOL_CHAIN_DIR}/arm-hisiv100nptl-linux-
+#export CROSS?= ${TOOL_CHAIN_DIR}/arm-hisiv100nptl-linux-
 
 export CC:= gcc
 export AR:= ar
@@ -30,7 +30,7 @@ all: $(TARGET)
 AUDIO_LIBA:=
 MPI_LIBS := 
 EX_LIBS := 
-CFLAGS := -Wall -g -I ./include 
+CFLAGS := -Wall -g -I ./include -L ./lib -levent
 
 $(TARGET): ${OBJ}
 	$(CC) $^ $(CFLAGS) $(MPI_LIBS) $(AUDIO_LIBA) $(EX_LIBS)  -o $@ 

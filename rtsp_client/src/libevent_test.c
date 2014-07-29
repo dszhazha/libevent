@@ -11,7 +11,8 @@
 #define MEM_SIZE    1024
 
 struct event_base* base;
-struct sock_ev {
+struct sock_ev
+{
     struct event* read_ev;
     struct event* write_ev;
     char* buffer;
@@ -43,7 +44,8 @@ void on_read(int sock, short event, void* arg)
     bzero(ev->buffer, MEM_SIZE);
     size = recv(sock, ev->buffer, MEM_SIZE, 0);
     printf("receive data:%s, size:%d\n", ev->buffer, size);
-    if (size == 0) {
+    if(size == 0) 
+	{
         release_sock_event(ev);
         close(sock);
         return;
